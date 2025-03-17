@@ -10,10 +10,7 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Account acc = new Account();
-            acc.Name = "Имя";
-            acc.Number =  1;
-            acc.Summ = 12.12;
+            Account acc = new Account("Имя",1,12.2);
         }
     }
 
@@ -25,6 +22,12 @@ namespace ConsoleApp1
         public int Number { get; set; }
 
         public double Summ { get; set; }
+
+        public Account(string name, int number, double summ) {
+        Name = name;
+        Number = number;
+        Summ = summ;
+        }
     
     }
 }
