@@ -10,6 +10,10 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+            Account acc = new Account();
+            acc.Name = "Имя";
+            acc.Number =  1;
+            acc.Summ = 12.12;
         }
     }
 
